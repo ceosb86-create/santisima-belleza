@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corporación Santísima Belleza</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root{
+    --rosa:#ff2f92;
+}
+
+/* HEADER */
+header{
+    background:black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:95vh;
+    background:url('hero.jpg') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.7);
+    padding:40px;
+    border-radius:10px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:var(--rosa);
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+}
+
+/* VIDEO */
+.video-section{
+    background:black;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.video-section h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.video-section video{
+    width:90%;
+    max-width:900px;
+    border-radius:10px;
+}
+
+/* PROMO */
+.promo{
+    background:#ff2f92;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* CURSOS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#ff2f92;
+    padding:10px;
+}
+
+.card p{
+    padding:10px;
+}
+
+/* ABOUT */
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    padding:40px;
+    align-items:center;
+}
+
+.about img{
+    max-width:400px;
+    border-radius:10px;
+}
+
+.about-text{
+    padding:20px;
+    flex:1;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:green;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Santísima Belleza</h2>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#about">Quiénes somos</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="overlay">
+        <h2>De Cero a Empresario en Belleza</h2>
+        <p>Aprende, emprende y genera ingresos desde el primer día</p>
+        <a class="btn" href="https://wa.me/593983858664">Inscribirme ahora</a>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+    <h2>Conoce Nuestro Centro de Formación</h2>
+
+    <video controls autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el video
+    </video>
+
+</section>
+
+<!-- PROMO -->
+<div class="promo">
+    🎓 Promoción especial: Estudia 2 carreras al precio de 1 🚀
+</div>
+
+<!-- CURSOS -->
+<section id="cursos">
+<div class="grid">
+
+<div class="card">
+<img src="curso1.jpg">
+<h3>💄 Belleza Integral & Cosmetología</h3>
+<p>Aprende maquillaje profesional, cuidado de la piel y estética desde cero hasta nivel avanzado. Ideal si quieres iniciar en el mundo de la belleza y destacar con servicios completos.</p>
+</div>
+
+<div class="card">
+<img src="curso2.jpg">
+<h3>💅 Uñas & Reflexología</h3>
+<p>Domina técnicas modernas en uñas y complementa con terapias de relajación altamente demandadas. Una carrera perfecta para generar ingresos rápidos y constantes.</p>
+</div>
+
+<div class="card">
+<img src="curso3.jpg">
+<h3>👁️ Diseño de Mirada & Lashista Pro</h3>
+<p>Especialízate en cejas y pestañas con técnicas profesionales que hoy lideran el mercado. Uno de los servicios más rentables y con mayor crecimiento.</p>
+</div>
+
+<div class="card">
+<img src="curso4.jpg">
+<h3>🧴 Cosmetología & Cosmiatría</h3>
+<p>Lleva tu conocimiento a otro nivel con tratamientos faciales avanzados, aparatología y enfoque clínico. Ideal para quienes quieren profesionalizarse en estética integral.</p>
+</div>
+
+<div class="card">
+<img src="curso7.jpg">
+<h3>🏥 Auxiliar de Enfermería & Farmacia</h3>
+<p>Fórmate en el área de salud con prácticas reales y alta salida laboral. Una oportunidad para trabajar y crecer en clínicas, consultorios o farmacias.</p>
+</div>
+
+<div class="card">
+<img src="curso8.jpg">
+<h3>👶 Parvularia & Primeros Auxilios</h3>
+<p>Prepárate para trabajar con niños, educación inicial y atención en emergencias. Una carrera con propósito y estabilidad laboral.</p>
+</div>
+
+</div>
+</section>
+
+<!-- QUIÉNES SOMOS -->
+<section class="about" id="about">
+
+<img src="about.jpg">
+
+<div class="about-text">
+
+<h2>Quiénes somos</h2>
+
+<p><strong>Santísima Belleza Academy</strong> es un centro de capacitación dedicado a la formación de artesanas-empresarias en el ámbito de la belleza y la estética. Orgullosamente contribuyen al crecimiento de mujeres de bajos recursos, otorgando becas y certificaciones a través de su convenio con la familia ANAE.</p>
+
+<p>Han tenido el honor de ser parte de la primera y segunda edición de la revista "Manos, Voces y Rostros", lo que respalda su trayectoria y compromiso con el arte y la educación en belleza.</p>
+
+<p>Además, han formado a grandes emprendedoras, compartiendo sin reservas técnicas actualizadas que les permiten descubrir su máximo potencial.</p>
+
+<p>Muchas de sus alumnas ya cuentan con sus propios centros estéticos o dictan clases en otras instituciones, logrando su independencia económica y convirtiéndose en el sustento de sus hogares.</p>
+
+<br>
+
+<h3>📍 Ubicación</h3>
+<p>Av. Chone y Av. Abraham Calazacón<br>Santo Domingo de los Tsáchilas</p>
+
+<br>
+
+<h3>🕒 Horarios de Atención</h3>
+<p>Lunes a Sábado<br>08:15 AM – 05:45 PM</p>
+
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/593983858664">WhatsApp</a>
+
+<footer>
+<p>© 2026 Santísima Belleza Academy</p>
+</footer>
+
+</body>
+</html>
